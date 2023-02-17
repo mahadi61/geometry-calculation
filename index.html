@@ -45,7 +45,7 @@
               <img src="./images/triangle.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+              <h2 id="card-1-title" class="card-title">Triangle</h2>
               <p>
                 Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> b
                 <span><i class="fa-solid fa-xmark"></i></span> h
@@ -53,6 +53,7 @@
               <div class="flex flex-row gap-2">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
+                  id="triangle-b"
                     type="text"
                     placeholder="b"
                     class="input input-bordered h-8 w-[70%]"
@@ -61,6 +62,7 @@
                 </div>
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
+                  id="triangle-h"
                     type="text"
                     placeholder="h"
                     class="input input-bordered h-8 w-[70%]"
@@ -69,7 +71,7 @@
                 </div>
               </div>
               <div class="card-actions">
-                <button class="btn bg-sky-500 text-xl font-bold">
+                <button id="cart-1-btn" class="btn bg-sky-500 text-xl font-bold">
                   Calculate
                 </button>
               </div>
@@ -81,13 +83,14 @@
               <img src="./images/rectangle.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangle</h2>
+              <h2 id="cart-2-title" class="card-title">Rectangle</h2>
               <p>
                 Area (A) = w <span><i class="fa-solid fa-xmark"></i></span> l
               </p>
               <div class="flex flex-row gap-2">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
+                  id="rectangle-w"
                     type="text"
                     placeholder="w"
                     class="input input-bordered h-8 w-[70%]"
@@ -96,6 +99,7 @@
                 </div>
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
+                  id="rectangle-l"
                     type="text"
                     placeholder="l"
                     class="input input-bordered h-8 w-[70%]"
@@ -104,7 +108,7 @@
                 </div>
               </div>
               <div class="card-actions">
-                <button class="btn bg-sky-500 text-xl font-bold">
+                <button id="cart-2-btn" class="btn bg-sky-500 text-xl font-bold">
                   Calculate
                 </button>
               </div>
@@ -116,32 +120,38 @@
               <img src="./images/parallelogram.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Parallelogram</h2>
+              <h2 
+              id="cart-3-title"
+              class="card-title">Parallelogram</h2>
               <p>
                 Area (A) = b <span><i class="fa-solid fa-xmark"></i></span> h
               </p>
               
-              <div class="flex flex-row gap-2"><p>b=10cm, h=12cm</p><span ><i class="fa-solid fa-pen-to-square"></i></span></div>
-              <div class="flex flex-row gap-2 hidden">
-                <div class="flex flex-row items-center gap-2 w-[50%]">
-                  <input
-                    type="text"
-                    placeholder="b"
-                    class="input input-bordered h-8 w-[70%]"
-                  />
-                  <span>CM</span>
-                </div>
-                <div class="flex flex-row items-center gap-2 w-[50%]">
-                  <input
-                    type="text"
-                    placeholder="h"
-                    class="input input-bordered h-8 w-[70%]"
-                  />
-                  <span>CM</span>
-                </div>
+              <div class="flex flex-row gap-2"><p>b=10cm, h=12cm</p><a ><i id="parallelogram-edit-icon" class="fa-solid fa-pen-to-square"></i></a></div>
+              <div id="parallelogram-input" class="hidden">
+                <div  class="flex flex-row gap-2">
+                    <div class="flex flex-row items-center gap-2 w-[50%]">
+                      <input
+                      id="parallelogram-b"
+                        type="text"
+                        placeholder="b"
+                        class="input input-bordered h-8 w-[70%]"
+                      />
+                      <span>CM</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-[50%]">
+                      <input
+                      id="parallelogram-h"
+                        type="text"
+                        placeholder="h"
+                        class="input input-bordered h-8 w-[70%]"
+                      />
+                      <span>CM</span>
+                    </div>
+                  </div>
               </div>
               <div class="card-actions">
-                <button class="btn bg-sky-500 text-xl font-bold">
+                <button id="cart-3-btn" class="btn bg-sky-500 text-xl font-bold">
                   Calculate
                 </button>
               </div>
@@ -159,25 +169,27 @@
                 <span><i class="fa-solid fa-xmark"></i></span> d<sub>1</sub>
                 <span><i class="fa-solid fa-xmark"></i></span> d<sub>2</sub>
               </p>
-              <div class="flex flex-row gap-2"><p>d<sub>1</sub> = 16cm, d<sub>2</sub> =8cm</p><span ><i class="fa-solid fa-pen-to-square"></i></span></div>
+              <div class="flex flex-row gap-2"><p>d<sub>1</sub> = 16cm, d<sub>2</sub> =8cm</p><a ><i id="rhombus-edit-icon" class="fa-solid fa-pen-to-square"></i></a></div>
               
-              <div class="flex flex-row gap-2 hidden">
-                <div class="flex flex-row items-center gap-2 w-[50%]">
-                  <input
-                    type="text"
-                    placeholder="b"
-                    class="input input-bordered h-8 w-[70%]"
-                  />
-                  <span>CM</span>
-                </div>
-                <div class="flex flex-row items-center gap-2 w-[50%]">
-                  <input
-                    type="text"
-                    placeholder="h"
-                    class="input input-bordered h-8 w-[70%]"
-                  />
-                  <span>CM</span>
-                </div>
+              <div id="rhombus-input" class="hidden">
+                <div class="flex flex-row gap-2 hidden">
+                    <div class="flex flex-row items-center gap-2 w-[50%]">
+                      <input
+                        type="text"
+                        placeholder="b"
+                        class="input input-bordered h-8 w-[70%]"
+                      />
+                      <span>CM</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-[50%]">
+                      <input
+                        type="text"
+                        placeholder="h"
+                        class="input input-bordered h-8 w-[70%]"
+                      />
+                      <span>CM</span>
+                    </div>
+                  </div>
               </div>
               <div class="card-actions">
                 <button class="btn bg-sky-500 text-xl font-bold">
@@ -272,26 +284,8 @@
           <div class="bg-white shadow-2xl">
             <div class="">
               <table id="t-body" class="table table-compact w-full">
-                <tr>
-                  <th>1</th>
-                  <td>Triangle</td>
-                  <td>12cm<sup>2</sup></td>
-                  <td>
-                    <button class="btn btn-primary">
-                      Covert to m<sup>2</sup>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th>1</th>
-                  <td>Triangle</td>
-                  <td>12cm<sup>2</sup></td>
-                  <td>
-                    <button class="btn btn-primary">
-                      Covert to m<sup>2</sup>
-                    </button>
-                  </td>
-                </tr>
+                
+                
               </table>
             </div>
           </div>
@@ -301,5 +295,7 @@
     <!-- main area end -->
 
     <!-- js -->
+    <script src="./utilities.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
