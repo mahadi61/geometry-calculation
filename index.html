@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Calculation</title>
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/b5182b956c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b5182b956c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- css -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
@@ -38,12 +41,15 @@
           <!-- card area start -->
           <!-- cart-1 -->
           <div class="card w-full bg-base-100 shadow-2xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 h-1/2">
               <img src="./images/triangle.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Triangle</h2>
-              <p>Area (A) = 0.5 <span><i class="fa-thin fa-xmark"></i></span> b <span><i class="fa-thin fa-xmark"></i> h</p>
+              <p>
+                Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> b
+                <span><i class="fa-solid fa-xmark"></i></span> h
+              </p>
               <div class="flex flex-row gap-2">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
@@ -71,12 +77,14 @@
           </div>
           <!-- cart-2 -->
           <div class="card w-full bg-base-100 shadow-2xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 h-1/2">
               <img src="./images/rectangle.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Rectangle</h2>
-              <p>Area (A) = w * l</p>
+              <p>
+                Area (A) = w <span><i class="fa-solid fa-xmark"></i></span> l
+              </p>
               <div class="flex flex-row gap-2">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
@@ -104,13 +112,17 @@
           </div>
           <!-- cart-3 -->
           <div class="card w-full bg-base-100 shadow-2xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 h-1/2">
               <img src="./images/parallelogram.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Parallelogram</h2>
-              <p>Area (A) = b * h</p>
-              <div class="flex flex-row gap-2">
+              <p>
+                Area (A) = b <span><i class="fa-solid fa-xmark"></i></span> h
+              </p>
+              
+              <div class="flex flex-row gap-2"><p>b=10cm, h=12cm</p><span ><i class="fa-solid fa-pen-to-square"></i></span></div>
+              <div class="flex flex-row gap-2 hidden">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
                     type="text"
@@ -137,13 +149,19 @@
           </div>
           <!-- cart-4 -->
           <div class="card w-full bg-base-100 shadow-2xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 h-1/2">
               <img src="./images/rhombus.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Rhombus</h2>
-              <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
-              <div class="flex flex-row gap-2">
+              <p>
+                Area (A) = 0.5
+                <span><i class="fa-solid fa-xmark"></i></span> d<sub>1</sub>
+                <span><i class="fa-solid fa-xmark"></i></span> d<sub>2</sub>
+              </p>
+              <div class="flex flex-row gap-2"><p>d<sub>1</sub> = 16cm, d<sub>2</sub> =8cm</p><span ><i class="fa-solid fa-pen-to-square"></i></span></div>
+              
+              <div class="flex flex-row gap-2 hidden">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
                     type="text"
@@ -170,13 +188,18 @@
           </div>
           <!-- cart-5 -->
           <div class="card w-full bg-base-100 shadow-2xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 h-1/2">
               <img src="./images/pentagon.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Pentagon</h2>
-              <p>Area (A) = 0.5 p * b</p>
-              <div class="flex flex-row gap-2">
+              <p>
+                Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> p
+                <span><i class="fa-solid fa-xmark"></i></span> b
+              </p>
+              
+              <div class="flex flex-row gap-2"><p>p = 6cm, b = 10cm</p><span ><i class="fa-solid fa-pen-to-square"></i></span></div>
+              <div class="flex flex-row gap-2 hidden">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
                     type="text"
@@ -203,13 +226,15 @@
           </div>
           <!-- cart-6 -->
           <div class="card w-full bg-base-100 shadow-2xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 pt-10 h-1/2">
               <img src="./images/ellipse.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Ellipse</h2>
-              <p>Area (A) = 3.14 * b * h</p>
-              <div class="flex flex-row gap-2">
+              <p>Area (A) = <span>&#960</span> ab</p>
+              
+              <div class="flex flex-row gap-2"><p>a = 10cm, b = 4cm</p><span ><i class="fa-solid fa-pen-to-square"></i></span></div>
+              <div class="flex flex-row gap-2 hidden">
                 <div class="flex flex-row items-center gap-2 w-[50%]">
                   <input
                     type="text"
@@ -237,36 +262,40 @@
           <!-- card area end -->
         </div>
         <!-- geometry calculation -->
-       <div>
-         <!-- calculation title -->
-         <div class="text-center">
+        <div>
+          <!-- calculation title -->
+          <div class="text-center">
             <h2 class="text-xl font-bold text-center underline">
-                Area Calculation
+              Area Calculation
             </h2>
           </div>
-        <div class="bg-white shadow-2xl">
-            
-                <div class="">
-                  <table id="t-body" class="table table-compact w-full">
-                    
-                      <tr>
-                        <th>1</th>
-                        <td>Triangle</td>
-                        <td>12cm<sup>2</sup></td>
-                        <td><button class="btn btn-primary">Covert to m<sup>2</sup></button></td>
-                      </tr>
-                      <tr>
-                        <th>1</th>
-                        <td>Triangle</td>
-                        <td>12cm<sup>2</sup></td>
-                        <td><button class="btn btn-primary">Covert to m<sup>2</sup></button></td>
-                      </tr>
-                    
-                  </table>
-                </div>
-              
+          <div class="bg-white shadow-2xl">
+            <div class="">
+              <table id="t-body" class="table table-compact w-full">
+                <tr>
+                  <th>1</th>
+                  <td>Triangle</td>
+                  <td>12cm<sup>2</sup></td>
+                  <td>
+                    <button class="btn btn-primary">
+                      Covert to m<sup>2</sup>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td>Triangle</td>
+                  <td>12cm<sup>2</sup></td>
+                  <td>
+                    <button class="btn btn-primary">
+                      Covert to m<sup>2</sup>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-       </div>
       </section>
     </main>
     <!-- main area end -->
