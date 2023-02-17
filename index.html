@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Calculation</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b5182b956c.js" crossorigin="anonymous"></script>
     <!-- css -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
@@ -28,6 +30,217 @@
       </div>
     </div>
     <!-- navbar end -->
+    <!-- main area start -->
+    <main>
+      <section class="grid grid-cols-3">
+        <!-- geometry area -->
+        <div class="col-span-2 grid grid-cols-3 gap-4 ml-3.5 p-2">
+          <!-- card area start -->
+          <!-- cart-1 -->
+          <div class="card w-full bg-base-100 shadow-2xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 <span><i class="fa-thin fa-xmark"></i></span> b <span><i class="fa-thin fa-xmark"></i> h</p>
+              <div class="flex flex-row gap-2">
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="h"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-wide bg-sky-500 text-xl font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- cart-2 -->
+          <div class="card w-full bg-base-100 shadow-2xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/rectangle.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area (A) = w * l</p>
+              <div class="flex flex-row gap-2">
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="l"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-wide bg-sky-500 text-xl font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- cart-3 -->
+          <div class="card w-full bg-base-100 shadow-2xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/parallelogram.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Parallelogram</h2>
+              <p>Area (A) = b * h</p>
+              <div class="flex flex-row gap-2">
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="h"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-wide bg-sky-500 text-xl font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- cart-4 -->
+          <div class="card w-full bg-base-100 shadow-2xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/rhombus.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rhombus</h2>
+              <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+              <div class="flex flex-row gap-2">
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="h"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-wide bg-sky-500 text-xl font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- cart-5 -->
+          <div class="card w-full bg-base-100 shadow-2xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/pentagon.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area (A) = 0.5 p * b</p>
+              <div class="flex flex-row gap-2">
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="h"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-wide bg-sky-500 text-xl font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- cart-6 -->
+          <div class="card w-full bg-base-100 shadow-2xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/ellipse.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area (A) = 3.14 * b * h</p>
+              <div class="flex flex-row gap-2">
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+                <div class="flex flex-row items-center gap-2 w-[50%]">
+                  <input
+                    type="text"
+                    placeholder="h"
+                    class="input input-bordered h-8 w-[70%]"
+                  />
+                  <span>CM</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-wide bg-sky-500 text-xl font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card area end -->
+        </div>
+        <!-- geometry calculation -->
+        <div class="bg-white shadow-2xl"><h2>hello!</h2></div>
+      </section>
+    </main>
+    <!-- main area end -->
 
     <!-- js -->
   </body>
