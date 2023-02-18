@@ -22,9 +22,11 @@ ellipseElement.style.display = 'inline-block';
 })
 
 
-
+// change number
+var count = 0;
 // cart 1 (triangle)
 document.getElementById('cart-1-btn').addEventListener('click', function(){
+    
     const geometryTitle = elementTextValue('card-1-title');
     const valueOfB = getElementValueById('triangle-b');
     const valueOfH = getElementValueById('triangle-h');
@@ -36,11 +38,14 @@ document.getElementById('cart-1-btn').addEventListener('click', function(){
     const tableBody = document.getElementById('t-body');
 
     if(isNaN(areaOfTriangleFloat) === false){
+        count += 1; 
         const tr = document.createElement('tr');
+        
     tr.innerHTML= `
-    <td>${1}<td>
+    <td>${count}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfTriangleFloat}<td>
+    <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
     tableBody.appendChild(tr);
@@ -49,6 +54,7 @@ document.getElementById('cart-1-btn').addEventListener('click', function(){
 })
 // cart 2 (rectangle)
 document.getElementById('cart-2-btn').addEventListener('click', function(){
+    
     const geometryTitle = elementTextValue('cart-2-title');
     const valueOfW = getElementValueById('rectangle-w');
     const valueOfL = getElementValueById('rectangle-l');
@@ -60,11 +66,13 @@ document.getElementById('cart-2-btn').addEventListener('click', function(){
     const tableBody = document.getElementById('t-body');
 
     if(isNaN(areaOfRectangleFloat) === false){
+        count += 1;
         const tr = document.createElement('tr');
     tr.innerHTML= `
-    <td>${1}<td>
+    <td>${count}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfRectangleFloat}<td>
+    <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
     tableBody.appendChild(tr);
@@ -74,6 +82,7 @@ document.getElementById('cart-2-btn').addEventListener('click', function(){
 
 // cart 3 (parallelogram)
 document.getElementById('cart-3-btn').addEventListener('click', function(){
+    count += 1;
     const geometryTitle = elementTextValue('cart-3-title');
     const valueOfB = getElementValueById('parallelogram-b');
     const valueOfH = getElementValueById('parallelogram-h');
@@ -85,11 +94,13 @@ document.getElementById('cart-3-btn').addEventListener('click', function(){
     const tableBody = document.getElementById('t-body');
 
     if(isNaN(areaOfParallelogramFloat) === false){
+        count += 1;
         const tr = document.createElement('tr');
     tr.innerHTML= `
-    <td>${1}<td>
+    <td>${count}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfParallelogramFloat}<td>
+    <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
     tableBody.appendChild(tr);
@@ -98,6 +109,7 @@ document.getElementById('cart-3-btn').addEventListener('click', function(){
 })
 // cart 4 (rhombus)
 document.getElementById('cart-4-btn').addEventListener('click', function(){
+    count += 1;
     const geometryTitle = elementTextValue('cart-4-title');
     const valueOfD1 = getElementValueById('rhombus-d-1');
     const valueOfD2 = getElementValueById('rhombus-d-2');
@@ -109,11 +121,13 @@ document.getElementById('cart-4-btn').addEventListener('click', function(){
     const tableBody = document.getElementById('t-body');
 
     if(isNaN(areaOfRhombusFloat) === false){
+        count += 1;
         const tr = document.createElement('tr');
     tr.innerHTML= `
-    <td>${1}<td>
+    <td>${count}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfRhombusFloat}<td>
+    <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
     tableBody.appendChild(tr);
@@ -122,6 +136,7 @@ document.getElementById('cart-4-btn').addEventListener('click', function(){
 })
 // cart 5 (Pentagon)
 document.getElementById('cart-5-btn').addEventListener('click', function(){
+    count += 1;
     const geometryTitle = elementTextValue('cart-5-title');
     const valueOfP = getElementValueById('pentagons-p');
     const valueOfB = getElementValueById('pentagons-b');
@@ -133,11 +148,13 @@ document.getElementById('cart-5-btn').addEventListener('click', function(){
     const tableBody = document.getElementById('t-body');
 
     if(isNaN(areaOfPentagonFloat) === false){
+        count += 1;
         const tr = document.createElement('tr');
     tr.innerHTML= `
-    <td>${1}<td>
+    <td>${count}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfPentagonFloat}<td>
+    <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
     tableBody.appendChild(tr);
@@ -146,6 +163,7 @@ document.getElementById('cart-5-btn').addEventListener('click', function(){
 })
 // cart 6 (Ellipse)
 document.getElementById('cart-6-btn').addEventListener('click', function(){
+    count += 1;
     const geometryTitle = elementTextValue('cart-6-title');
     const valueOfB = getElementValueById('ellipse-b');
     const valueOfH = getElementValueById('ellipse-h');
@@ -156,14 +174,17 @@ document.getElementById('cart-6-btn').addEventListener('click', function(){
     const areaOfEllipseFloat = areaOfEllipse.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
+    
+
 
     if(isNaN(areaOfEllipseFloat) === false){
+        count += 1;    
         const tr = document.createElement('tr');
     tr.innerHTML= `
-    <td>${1}<td>
+    <td>${count}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfEllipseFloat}<td>
-    <td>${1}<td>
+    <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>  
     
     `;
     tableBody.appendChild(tr);
@@ -173,27 +194,27 @@ document.getElementById('cart-6-btn').addEventListener('click', function(){
 
 // random color in every card
 // cart - 1
-document.getElementById('cart-1-bg').addEventListener('mousemove', function(){
+document.getElementById('cart-1-bg').addEventListener('mouseenter', function(){
     cardBgChange('cart-1-bg');
 })
 // cart - 2
-document.getElementById('cart-2-bg').addEventListener('mousemove', function(){
+document.getElementById('cart-2-bg').addEventListener('mouseenter', function(){
     cardBgChange('cart-2-bg');
 })
 // cart - 3
-document.getElementById('cart-3-bg').addEventListener('mousemove', function(){
+document.getElementById('cart-3-bg').addEventListener('mouseenter', function(){
     cardBgChange('cart-3-bg');
 })
 // cart - 4
-document.getElementById('cart-4-bg').addEventListener('mousemove', function(){
+document.getElementById('cart-4-bg').addEventListener('mouseenter', function(){
     cardBgChange('cart-4-bg');
 })
 // cart - 5
-document.getElementById('cart-5-bg').addEventListener('mousemove', function(){
+document.getElementById('cart-5-bg').addEventListener('mouseenter', function(){
     cardBgChange('cart-5-bg');
 })
 // cart - 6
-document.getElementById('cart-6-bg').addEventListener('mousemove', function(){
+document.getElementById('cart-6-bg').addEventListener('mouseenter', function(){
     cardBgChange('cart-6-bg');
 })
 
