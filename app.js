@@ -44,7 +44,7 @@ document.getElementById('cart-1-btn').addEventListener('click', function(){
     tr.innerHTML= `
     <td>${count}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfTriangleFloat}<td>
+    <td>${areaOfTriangleFloat}cm<sup>2</sup><td>
     <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
@@ -71,7 +71,7 @@ document.getElementById('cart-2-btn').addEventListener('click', function(){
     tr.innerHTML= `
     <td>${count}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfRectangleFloat}<td>
+    <td>${areaOfRectangleFloat}cm<sup>2</sup><td>
     <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
@@ -95,11 +95,12 @@ document.getElementById('cart-3-btn').addEventListener('click', function(){
 
     if(isNaN(areaOfParallelogramFloat) === false){
         count += 1;
+        
         const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${count}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfParallelogramFloat}<td>
+    <td>${areaOfParallelogramFloat}cm<sup>2</sup><td>
     <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
@@ -126,7 +127,7 @@ document.getElementById('cart-4-btn').addEventListener('click', function(){
     tr.innerHTML= `
     <td>${count}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfRhombusFloat}<td>
+    <td>${areaOfRhombusFloat}cm<sup>2</sup><td>
     <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
@@ -153,7 +154,7 @@ document.getElementById('cart-5-btn').addEventListener('click', function(){
     tr.innerHTML= `
     <td>${count}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfPentagonFloat}<td>
+    <td>${areaOfPentagonFloat}cm<sup>2</sup><td>
     <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>
     
     `;
@@ -183,7 +184,7 @@ document.getElementById('cart-6-btn').addEventListener('click', function(){
     tr.innerHTML= `
     <td>${count}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfEllipseFloat}<td>
+    <td>${areaOfEllipseFloat}cm<sup>2</sup><td>
     <td><button class = "btn bg-blue-700">Convert to m<sup>2</sup></button><td>  
     
     `;
