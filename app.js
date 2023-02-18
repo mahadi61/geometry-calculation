@@ -35,7 +35,8 @@ document.getElementById('cart-1-btn').addEventListener('click', function(){
     const areaOfTriangleFloat = areaOfTriangle.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
-    const tr = document.createElement('tr');
+    if(isNaN(areaOfTriangleFloat) === false){
+        const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
@@ -43,6 +44,7 @@ document.getElementById('cart-1-btn').addEventListener('click', function(){
     
     `;
     tableBody.appendChild(tr);
+    }
     
 })
 // cart 2 (rectangle)
@@ -57,7 +59,8 @@ document.getElementById('cart-2-btn').addEventListener('click', function(){
     const areaOfRectangleFloat = areaOfRectangle.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
-    const tr = document.createElement('tr');
+    if(isNaN(areaOfRectangleFloat) === false){
+        const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
@@ -65,6 +68,7 @@ document.getElementById('cart-2-btn').addEventListener('click', function(){
     
     `;
     tableBody.appendChild(tr);
+    }
     
 })
 
@@ -80,7 +84,8 @@ document.getElementById('cart-3-btn').addEventListener('click', function(){
     const areaOfParallelogramFloat = areaOfParallelogram.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
-    const tr = document.createElement('tr');
+    if(isNaN(areaOfParallelogramFloat) === false){
+        const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
@@ -89,6 +94,7 @@ document.getElementById('cart-3-btn').addEventListener('click', function(){
     `;
     tableBody.appendChild(tr);
     
+    }
 })
 // cart 4 (rhombus)
 document.getElementById('cart-4-btn').addEventListener('click', function(){
@@ -102,7 +108,8 @@ document.getElementById('cart-4-btn').addEventListener('click', function(){
     const areaOfRhombusFloat = areaOfRhombus.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
-    const tr = document.createElement('tr');
+    if(isNaN(areaOfRhombusFloat) === false){
+        const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
@@ -110,6 +117,7 @@ document.getElementById('cart-4-btn').addEventListener('click', function(){
     
     `;
     tableBody.appendChild(tr);
+    }
     
 })
 // cart 5 (Pentagon)
@@ -124,7 +132,8 @@ document.getElementById('cart-5-btn').addEventListener('click', function(){
     const areaOfPentagonFloat = areaOfPentagon.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
-    const tr = document.createElement('tr');
+    if(isNaN(areaOfPentagonFloat) === false){
+        const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
@@ -132,6 +141,7 @@ document.getElementById('cart-5-btn').addEventListener('click', function(){
     
     `;
     tableBody.appendChild(tr);
+    }
     
 })
 // cart 6 (Ellipse)
@@ -146,14 +156,18 @@ document.getElementById('cart-6-btn').addEventListener('click', function(){
     const areaOfEllipseFloat = areaOfEllipse.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
-    const tr = document.createElement('tr');
+
+    if(isNaN(areaOfEllipseFloat) === false){
+        const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
     <td>${areaOfEllipseFloat}<td>
+    <td>${1}<td>
     
     `;
     tableBody.appendChild(tr);
+    }
     
 })
 
@@ -185,5 +199,5 @@ document.getElementById('cart-6-bg').addEventListener('mousemove', function(){
 
 // blog button
 document.getElementById('blog-btn').addEventListener('click', function(){
-    
+    window.location.href = '/blog.html';
 })
