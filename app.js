@@ -32,13 +32,14 @@ document.getElementById('cart-1-btn').addEventListener('click', function(){
         alert ('This is not a valid number')
     }
     const areaOfTriangle = 0.5 * valueOfB * valueOfH;
+    const areaOfTriangleFloat = areaOfTriangle.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
     const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfTriangle}<td>
+    <td>${areaOfTriangleFloat}<td>
     
     `;
     tableBody.appendChild(tr);
@@ -53,13 +54,14 @@ document.getElementById('cart-2-btn').addEventListener('click', function(){
         alert ('This is not a valid number')
     }
     const areaOfRectangle = valueOfW * valueOfL;
+    const areaOfRectangleFloat = areaOfRectangle.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
     const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfRectangle}<td>
+    <td>${areaOfRectangleFloat}<td>
     
     `;
     tableBody.appendChild(tr);
@@ -75,13 +77,14 @@ document.getElementById('cart-3-btn').addEventListener('click', function(){
         alert ('This is not a valid number')
     }
     const areaOfParallelogram = valueOfB * valueOfH;
+    const areaOfParallelogramFloat = areaOfParallelogram.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
     const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfParallelogram}<td>
+    <td>${areaOfParallelogramFloat}<td>
     
     `;
     tableBody.appendChild(tr);
@@ -96,13 +99,14 @@ document.getElementById('cart-4-btn').addEventListener('click', function(){
         alert ('This is not a valid number')
     }
     const areaOfRhombus = 0.5 * valueOfD1 * valueOfD2;
+    const areaOfRhombusFloat = areaOfRhombus.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
     const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfRhombus}<td>
+    <td>${areaOfRhombusFloat}<td>
     
     `;
     tableBody.appendChild(tr);
@@ -117,13 +121,14 @@ document.getElementById('cart-5-btn').addEventListener('click', function(){
         alert ('This is not a valid number')
     }
     const areaOfPentagon = 0.5 * valueOfP * valueOfB;
+    const areaOfPentagonFloat = areaOfPentagon.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
     const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfPentagon}<td>
+    <td>${areaOfPentagonFloat}<td>
     
     `;
     tableBody.appendChild(tr);
@@ -138,13 +143,14 @@ document.getElementById('cart-6-btn').addEventListener('click', function(){
         alert ('This is not a valid number')
     }
     const areaOfEllipse = 3.1416 * valueOfB * valueOfH;
+    const areaOfEllipseFloat = areaOfEllipse.toFixed(2);
     const tableBody = document.getElementById('t-body');
 
     const tr = document.createElement('tr');
     tr.innerHTML= `
     <td>${1}<td>
     <td>${geometryTitle}<td>
-    <td>${areaOfEllipse}<td>
+    <td>${areaOfEllipseFloat}<td>
     
     `;
     tableBody.appendChild(tr);
@@ -175,4 +181,9 @@ document.getElementById('cart-5-bg').addEventListener('mousemove', function(){
 // cart - 6
 document.getElementById('cart-6-bg').addEventListener('mousemove', function(){
     cardBgChange('cart-6-bg');
+})
+
+// blog button
+document.getElementById('blog-btn').addEventListener('click', function(){
+    
 })
